@@ -35,100 +35,126 @@ st.markdown("""
     /* Main container styling */
     .main {
         padding: 2rem;
+        background-color: #f5f7fa;
     }
     
     /* Header styling */
     .header-container {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 2.5rem 2rem;
-        border-radius: 15px;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        padding: 3rem 2rem;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
+        box-shadow: 0 10px 30px rgba(37,99,235,0.2);
     }
     
     .header-title {
         color: white;
-        font-size: 2.5rem;
-        font-weight: 700;
+        font-size: 2.8rem;
+        font-weight: 800;
         text-align: center;
         margin: 0;
-        letter-spacing: -0.5px;
+        letter-spacing: -1px;
     }
     
     .header-subtitle {
-        color: rgba(255,255,255,0.9);
-        font-size: 1.1rem;
+        color: rgba(255,255,255,0.95);
+        font-size: 1.15rem;
         text-align: center;
-        margin-top: 0.5rem;
-        font-weight: 400;
+        margin-top: 0.8rem;
+        font-weight: 300;
     }
     
     /* Button styling */
     div.stButton > button {
         width: 100%;
-        height: 65px;
-        border-radius: 10px;
+        height: 70px;
+        border-radius: 12px;
         font-weight: 600;
-        font-size: 0.95rem;
-        border: 2px solid transparent;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        font-size: 1rem;
+        border: 2px solid #e5e7eb;
+        transition: all 0.25s ease;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        background-color: white;
     }
     
     div.stButton > button:hover {
-        background-color: #667eea !important;
-        border-color: #667eea !important;
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        border-color: transparent !important;
         color: white !important;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(102,126,234,0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(37,99,235,0.25);
     }
     
     div.stButton > button[kind="primary"] {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
         color: white;
         border: none;
+        box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+    }
+    
+    div.stButton > button[kind="primary"]:hover {
+        box-shadow: 0 8px 20px rgba(37,99,235,0.4);
     }
     
     /* Text area styling */
     .stTextArea textarea {
-        border-radius: 10px;
-        border: 2px solid #e0e0e0;
-        font-size: 0.95rem;
-        padding: 1rem;
+        border-radius: 12px;
+        border: 2px solid #e5e7eb;
+        font-size: 0.98rem;
+        padding: 1.2rem;
+        background-color: white;
     }
     
     .stTextArea textarea:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 2px rgba(102,126,234,0.2);
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
     }
     
     /* File uploader styling */
     .uploadedFile {
-        border-radius: 10px;
+        border-radius: 12px;
+        background-color: white;
     }
     
     /* Section headers */
     .section-header {
-        color: #2c3e50;
-        font-size: 1.3rem;
-        font-weight: 600;
-        margin: 2rem 0 1rem 0;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid #667eea;
+        color: #1e293b;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 2.5rem 0 1.5rem 0;
+        padding-bottom: 0.8rem;
+        border-bottom: 3px solid #2563eb;
+        display: inline-block;
     }
     
     /* Success message */
     .stSuccess {
-        border-radius: 10px;
+        border-radius: 12px;
+        background-color: #f0fdf4;
+        border-left: 4px solid #22c55e;
     }
     
-    /* Response container */
-    .response-box {
-        background: #f8f9fa;
+    /* Info message */
+    .stInfo {
+        border-radius: 12px;
+        background-color: #eff6ff;
+        border-left: 4px solid #2563eb;
+    }
+    
+    /* Card styling */
+    .input-card {
+        background: white;
         padding: 1.5rem;
-        border-radius: 10px;
-        border-left: 4px solid #667eea;
-        margin-top: 1rem;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        margin-bottom: 1.5rem;
+    }
+    
+    .input-card h3 {
+        color: #1e293b;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
     }
     </style>
 """, unsafe_allow_html=True)
