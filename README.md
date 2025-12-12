@@ -13,6 +13,7 @@ An AI-powered resume analysis and interview preparation tool that helps job seek
 ## 🚀 Demo
 
 Upload your resume and paste a job description to:
+
 - Analyze your resume against job requirements
 - Get an ATS compatibility score
 - Prepare for interviews with custom questions and answers
@@ -24,7 +25,6 @@ Upload your resume and paste a job description to:
 - **Streamlit** - Web interface
 - **Google Gemini AI** - AI-powered analysis
 - **PyMuPDF (fitz)** - PDF processing
-- **python-dotenv** - Environment management
 
 ## 📋 Prerequisites
 
@@ -35,17 +35,20 @@ Upload your resume and paste a job description to:
 ## 🔧 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/maazxd/resume-ats-tracker.git
    cd resume-ats-tracker
    ```
 
 2. **Create a virtual environment**
+
    ```bash
    python -m venv myvenv
    ```
 
 3. **Activate the virtual environment**
+
    - Windows:
      ```bash
      myvenv\Scripts\activate
@@ -56,13 +59,15 @@ Upload your resume and paste a job description to:
      ```
 
 4. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 5. **Set up environment variables**
-   
+
    Create a `.env` file in the root directory:
+
    ```env
    GOOGLE_API_KEY=your_google_api_key_here
    ```
@@ -70,11 +75,13 @@ Upload your resume and paste a job description to:
 ## 🎯 Usage
 
 1. **Start the application**
+
    ```bash
    streamlit run app.py
    ```
 
 2. **Open your browser**
+
    - The app will automatically open at `http://localhost:8501`
 
 3. **Use the application**
@@ -120,19 +127,23 @@ model = genai.GenerativeModel('gemini-2.5-flash')
 ## 🎨 Features in Detail
 
 ### Resume Analysis
+
 Provides a comprehensive breakdown of your resume including:
+
 - Skills assessment
 - Experience evaluation
 - Strengths and weaknesses
 - Professional summary
 
 ### ATS Match Score
+
 - Percentage match with job description
 - Missing keywords identification
 - Optimization recommendations
 - Final hiring insights
 
 ### Interview Preparation
+
 - Role-specific questions
 - Behavioral questions
 - Technical scenarios
@@ -157,28 +168,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - API rate limits on free tier (5 requests/minute)
 - PDF text extraction may not work perfectly with image-based PDFs
 - Large resumes may take longer to process
-
-## 🔮 Future Enhancements
-
-- [ ] Support for multiple file formats (DOCX, TXT)
-- [ ] Resume formatting checker
-- [ ] Cover letter generator
-- [ ] LinkedIn profile analyzer
-- [ ] Salary estimation feature
-- [ ] Multiple resume comparison
-- [ ] Export results as PDF
-
-## 👤 Author
-
-**Muaaz**
-- GitHub: [@maazxd](https://github.com/maazxd)
-
-## 🙏 Acknowledgments
-
-- Google Gemini AI for powerful language models
-- Streamlit for the amazing web framework
-- PyMuPDF for PDF processing capabilities
-
----
-
-⭐ If you find this project helpful, please give it a star!
